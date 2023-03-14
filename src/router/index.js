@@ -5,6 +5,7 @@ import DoctorList from '../views/DoctorList.vue'
 import LoginPage from '../views/LoginPage.vue'
 import PatientPage from '../views/PatientPage.vue'
 import RegisterPage from '../views/RegisterPage.vue'
+import ReviewsPage from '../views/ReviewsPage.vue'
 
 
 const routes = [
@@ -36,6 +37,12 @@ const routes = [
     path: '/registration',
     name: 'registration',
     component: RegisterPage
+  },
+
+  {
+    path: '/reviews',
+    name: 'reviews',
+    component: ReviewsPage
   },
 
   {
