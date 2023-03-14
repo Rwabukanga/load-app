@@ -6,6 +6,11 @@ import LoginPage from '../views/LoginPage.vue'
 import PatientPage from '../views/PatientPage.vue'
 import RegisterPage from '../views/RegisterPage.vue'
 import ReviewsPage from '../views/ReviewsPage.vue'
+import AppointmentsList from '../views/AppointmentsList.vue'
+import SpecialitiesPage from '../views/SpecialitiesPage.vue'
+import TransactionsList from '../views/TransactionsList.vue'
+import SettingsPage from '../views/SettingsPage.vue'
+
 
 
 const routes = [
@@ -44,6 +49,31 @@ const routes = [
     name: 'reviews',
     component: ReviewsPage
   },
+
+  {
+    path: '/appointmentlist',
+    name: 'appointmentlist',
+    component: AppointmentsList
+  },
+
+  {
+    path: '/specialist',
+    name: 'specialist',
+    component: SpecialitiesPage
+  },
+
+  {
+    path: '/transactionslist',
+    name: 'transactionslist',
+    component: TransactionsList
+  },
+
+  {
+    path: '/setting',
+    name: 'setting',
+    component: SettingsPage
+  },
+
 
   {
     path: '/about',
