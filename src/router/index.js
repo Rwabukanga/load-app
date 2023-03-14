@@ -1,12 +1,43 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import DealView from '../views/DealView.vue'
+
+import DoctorList from '../views/DoctorList.vue'
+import LoginPage from '../views/LoginPage.vue'
+import PatientPage from '../views/PatientPage.vue'
+import RegisterPage from '../views/RegisterPage.vue'
+
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: DealView
   },
+
+  {
+    path: '/doctorlist',
+    name: 'doctorlist',
+    component: DoctorList
+  },
+
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginPage
+  },
+
+  {
+    path: '/patientlist',
+    name: 'patientlist',
+    component: PatientPage
+  },
+
+  {
+    path: '/registration',
+    name: 'registration',
+    component: RegisterPage
+  },
+
   {
     path: '/about',
     name: 'about',
